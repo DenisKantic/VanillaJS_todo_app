@@ -39,3 +39,15 @@ form input{
 
     cursor: text;
 }
+
+button{
+
+    background: white;
+    color:#b15940;
+}
+
+button:hover{
+
+    background: #b15940;
+    color:white;    
+}
