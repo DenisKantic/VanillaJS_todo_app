@@ -15,5 +15,12 @@ function createItem(event){
 
     event.preventDefault();
 
-    
+    const todoDiv = document.createElement('div');
+    todoDiv.classList.add('.todo-div');
+
+
+    const newItem = document.createElement('li');
+    newItem.innerText = todoInput.value;
+    newItem.classList.add('todo-item');
+    todoDiv.appendChild(newItem);
 }
