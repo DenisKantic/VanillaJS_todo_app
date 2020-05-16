@@ -64,7 +64,7 @@ form input{
 
 .todo-list{
 
-    min-width: 40%;
+    min-width: 35%;
     list-style-type: none;
 }
 
@@ -96,7 +96,28 @@ form input{
     color: white;
 }
 
+.fa-check, .fa-trash{
+
+    pointer-events: none;
+}
+
 .check-btn{
 
     background: rgb(30, 143, 30);
+}
+
+.check-btn:hover{
+
+    background: rgb(42, 214, 42);
+}
+
+.trash-btn:hover{
+    background: #ee6945;
+}
+
+.completed{
+
+    text-decoration: line-through;
+    opacity: 0.4;
+    transition: all 0.3s ease;
 }
