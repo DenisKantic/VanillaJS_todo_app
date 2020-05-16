@@ -23,10 +23,10 @@ header, form{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30%;
+    min-width: 40%;
 }
 
-form input, button{
+form input, .submit-btn{
 
     font-size: 1.2rem;
     border: none;
@@ -40,14 +40,63 @@ form input{
     cursor: text;
 }
 
-button{
+.submit-btn{
 
     background: white;
     color:#b15940;
 }
 
-button:hover{
+.submit-btn:hover{
 
     background: #b15940;
     color:white;    
+}
+
+/*__________________________________________________________*/
+
+
+.todo-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+
+    min-width: 40%;
+    list-style-type: none;
+}
+
+.todo-div{
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    outline: none;
+    margin: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.todo-div li{
+
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.check-btn, .trash-btn{
+
+    padding: 1rem;
+    outline:none;
+    cursor: pointer;
+    border: none;
+    background: #b15940;
+    color: white;
+}
+
+.check-btn{
+
+    background: rgb(30, 143, 30);
 }

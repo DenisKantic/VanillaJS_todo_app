@@ -16,7 +16,7 @@ function createItem(event){
     event.preventDefault();
 
     const todoDiv = document.createElement('div');
-    todoDiv.classList.add('.todo-div');
+    todoDiv.classList.add('todo-div');
 
 
     const newItem = document.createElement('li');
@@ -38,4 +38,9 @@ function createItem(event){
     trashBtn.innerHTML = '<i class="fas fa-trash"></i>';
     trashBtn.classList.add('trash-btn');
     todoDiv.appendChild(trashBtn);
+
+
+    todoList.appendChild(todoDiv);
+
+    todoInput.value="";
 }
